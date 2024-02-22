@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# StroyBook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> StoryBook은 무엇인가?
+> [Naver D2 Youtube](https://youtu.be/jc9xKzdkYDg?si=y0yX0fMDbzCbvG3M)
+
+-   StoryBook은 컴포넌트 기반의 view를 위한 UI 컴포넌트 개발환경이다.<br>
+-   React 프로젝트를 진행할 때 tree 구조의 컴포넌트들이 많아짐에 따라 상태 관리의 용이를 위해 Container라는 상태 관리 컴포넌트와 stateless한 pure 컴포넌트를 만들다가 앱의 규모가 커짐에 따라 Container 에서 모든 비즈니스 로직들을 처리하기 힘들 때 전역적인 상태 관리를 위해 상태 관리 라이브러리 등을 사용하게 된다.<br><br>
+    ![alt text](image.png)
+
+-   다만, 상태에 따라 보여지는 stateless 컴포넌트들을 확인하기 위해 상태를 임의로 조작하는 등의 복잡한 과정들을 거쳐야 하는 부분이 있었는데 아래의 이미지처럼 특정 상황에서만 보여지는 컴포넌트의 경우 특정한 상황을 직접 조작하는것이 굉장히 귀찮은 상황도 자주 발생한다. 단순히 컴포넌트 하나를 보기 위해 무수한 노력이 필요한것이다.
+    <br><br>
+    ![alt text](image-3.png)
+    ![alt text](image-2.png)
+-   StoryBook을 사용하면 pure하고 state에 의존적인 컴포넌트들을 선형적으로 나열하고 언제든지 보고 싶은 컴포넌트들을 볼 수 있게 된다. 또한 fake state를 만들어 특정 상태에 따른 디자인 확인이 용이하다.
+    <br><br>
+    ![alt text](image-4.png)
+
+> StoryBook은 무엇인가?
 
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
