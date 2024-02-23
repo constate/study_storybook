@@ -9,14 +9,7 @@
 
 -   다만, 상태에 따라 보여지는 stateless 컴포넌트들을 확인하기 위해 상태를 임의로 조작하는 등의 복잡한 과정들을 거쳐야 하는 부분이 있었는데 아래의 이미지처럼 특정 상황에서만 보여지는 컴포넌트의 경우 특정한 상황을 직접 조작하는것이 굉장히 귀찮은 상황도 자주 발생한다. 단순히 컴포넌트 하나를 보기 위해 무수한 노력이 필요한것이다.
     <br><br>
-    ![alt text](image-3.png)
     ![alt text](image-2.png)
 -   StoryBook을 사용하면 pure하고 state에 의존적인 컴포넌트들을 선형적으로 나열하고 언제든지 보고 싶은 컴포넌트들을 볼 수 있게 된다. 또한 fake state를 만들어 특정 상태에 따른 디자인 확인이 용이하다.
     <br><br>
     ![alt text](image-4.png)
-
-> StoryBook은 무엇인가?
-
-## Available Scripts
-
-In the project directory, you can run:
